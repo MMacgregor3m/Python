@@ -1,9 +1,9 @@
 # Hangman first 4/28
 import random
-print('welcome to the end')
+print("Welcome to your end")
 print("--------------------------")
 
-wordDictionary = ('Elephant, Rainbow, Computer, Butterfly, Chocolate, Adventure, Guitar, Sunshine, Backpack, Fireworks, Dragon, Ocean, Moonlight, Pizza, Galaxy, Watermelon, Telescope, Happiness, Umbrella, Bicycle, Kangaroo, Sandwich, Symphony, Lemonade, Jellyfish')
+wordDictionary = ('Elephant, Rainbow, Computer, Butterfly, Chocolate, Adventure, Guitar, Sunshine, Backpack, Fireworks,Dragon, Ocean, Moonlight, Pizza, Galaxy, Watermelon, Telescope, Happiness, Umbrella, Bicycle, Kangaroo, Sandwich, Symphony, Lemonade, Jellyfish')
 
 ######choose a random word
 randomWord = random.choice(wordDictionary)
@@ -54,11 +54,11 @@ def print_hangman(wrong):
         print("/ \  |")
         print("   ===")
 
-def printWord(guessedLetter):
+def printWord(guessedLetters):
     counter=0
     rightLetters=0
     for char in randomWord:
-            if(char in guessedLetter):
+            if(char in guessedLetters):
                 print(randomWord[counter],end=" ")
                 rightLetters+=1 
             else:
@@ -68,7 +68,7 @@ def printWord(guessedLetter):
     
 
     def printLines():
-        print("\r")
+        print("\r") 
         for char in randomWord:
             print("\u203e",end="")
 
@@ -84,3 +84,22 @@ def printWord(guessedLetter):
                     print(letter, end=" ")
             ##Prompt user for imput
             letterGuessed = input("\nGuess a letter:")
+            ###User is right
+            if(randomWord[current_guess_index] == letterGuessed):
+                print_hangman(amount_of_times_wrong)
+                ###Print Word
+                current_guess_index+=1
+                current_letters_guessed.append(letterGuessed)
+                current_letters_right=printWord(current_letters_guessed)
+                printLines
+                ###User was wrong af
+            else:
+                amount_of_times_wrong+=1
+                current_letters_guessed.append(letterGuessed)
+                ###update drawing
+                print_hangman(amount_of_times_wrong)
+                ###print word
+                current_letters_right = printWord(current_letters_guessed)
+                printLines()
+
+                print("Game Over, you live another day")       
