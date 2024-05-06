@@ -3,7 +3,7 @@ import random
 print("Welcome to your end")
 print("--------------------------")
 
-wordDictionary = ('Elephant, Rainbow, Computer, Butterfly, Chocolate, Adventure, Guitar, Sunshine, Backpack, Fireworks,Dragon, Ocean, Moonlight, Pizza, Galaxy, Watermelon, Telescope, Happiness, Umbrella, Bicycle, Kangaroo, Sandwich, Symphony, Lemonade, Jellyfish')
+wordDictionary = ['Elephant', 'Rainbow', 'Computer','Butterfly','Chocolate','Adventure','Guitar','Sunshine', 'Backpack', 'Fireworks','Dragon','Ocean','Moonlight','Pizza', 'Galaxy', 'Watermelon', 'Telescope', 'Happiness', 'Umbrella', 'Bicycle', 'Kangaroo', 'Sandwich', 'Symphony', 'Lemonade', 'Jellyfish']
 
 ######choose a random word
 randomWord = random.choice(wordDictionary)
