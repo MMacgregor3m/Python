@@ -11,21 +11,21 @@ hangman_count=-1
 while tries > 0:
     output = ''
     for letter in word:
-        if letter in guessed_correctly
+        if letter in guessed_correctly:
             output += letter
-    else:
-        output += '_ '
-if output == word:
-    break
+        else:
+            output += '_ '
+    if output == word:
+        break
 
 print("Guess the word: ",output)
 print(tries," chances left")
 guess = input().lower()
 if guess in guessed_correctly or guess in guessed_incorrectly:
         print("Already guessed", guess)
-    elif guess in word:
+elif guess in word:
         print ("Awesome ! You guessed correct.")
-    else:
+else:
         print("You are closer to death! WORNG LETTER")
         hangman_count = hangman_count + 1 
         tries= tries - 1
