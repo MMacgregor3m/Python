@@ -15,10 +15,14 @@ while tries > 0:
             output += letter
     else:
         output += '_ '
-if output is == word:
+if output == word:
     break
 
 print("Guess the word: ",output)
 print(tries," chances left")
 guess = input().lower()
 if guess in guessed_correctly or guess in guessed_incorrectly:
+        print("Already guessed", guess)
+    elif guess in word:
+        print ("Awesome ! You guessed correct.")
+    else:
