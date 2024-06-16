@@ -26,3 +26,12 @@ if guess in guessed_correctly or guess in guessed_incorrectly:
     elif guess in word:
         print ("Awesome ! You guessed correct.")
     else:
+        print("You are closer to death! WORNG LETTER")
+        hangman_count = hangman_count + 1 
+        tries= tries - 1
+        guessed_incorrectly.append (guess)
+        print(hangman_count)
+if tries > 0:
+      print ("You received a pardon. Enjoy your second chance.")
+else:
+    print ("Fatality!")
