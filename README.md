@@ -45,4 +45,4 @@ To run any of the projects in this repository, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/MMacgregor3m/your-repo-name.git
