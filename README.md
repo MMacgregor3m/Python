@@ -22,7 +22,7 @@ This repository includes various Python projects that I have worked on to enhanc
 ### Project 1: Data Analysis
 - **Description**: This project focuses on data cleaning, transformation, and analysis using Pandas and NumPy.
 - **Key Skills**: Data manipulation, visualization, statistical analysis.
-- **Repository**: [[Link to Project 1]](https://github.com/MMacgregor3m/vslessons/blob/main/%23%20PORT%20SCANNER.py)(#)
+- **Repository**: [[Link to Project 1]](#)
 
 ### Project 2: Web Scraping
 - **Description**: A project aimed at extracting data from web pages using BeautifulSoup and requests.
