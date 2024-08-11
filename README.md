@@ -19,9 +19,9 @@ This repository includes various Python projects that I have worked on to enhanc
 
 ## Project Descriptions
 
-### Project 1: Data Analysis
-- **Description**: This project focuses on data cleaning, transformation, and analysis using Pandas and NumPy.
-- **Key Skills**: Data manipulation, visualization, statistical analysis.
+### Project 1: Key Logger
+- **Description**: This keylogger application records keystrokes on a target system discreetly and logs them for analysis.
+- **Key Skills**: The project showcases fundamental programming skills in Python, focusing on system-level interaction and data logging techniques
 - **Repository**: [[Link to Project 1]](#)
 
 ### Project 2: Web Scraping
