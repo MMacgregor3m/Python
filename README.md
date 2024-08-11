@@ -5,7 +5,7 @@ Welcome to my repository of Python practice projects. These projects were develo
 ## Table of Contents
 1. [Overview](#overview)
 2. [Project Descriptions](#project-descriptions)
-   - [Project 1: Data Analysis](#project-1-data-analysis)
+   - [Project 1: KEY LOGGER](#project-1-data-analysis)
    - [Project 2: Web Scraping](#project-2-web-scraping)
    - [Project 3: Automation](#project-3-automation)
    - [Project 4: OSINT Tool](#project-4-osint-tool)
